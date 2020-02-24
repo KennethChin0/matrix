@@ -38,6 +38,7 @@ def save_ppm( screen, fname ):
         for x in range( len(screen[y]) ):
             pixel = screen[y][x]
             f.write( bytes(pixel) )
+
     f.close()
 
 def save_ppm_ascii( screen, fname ):
